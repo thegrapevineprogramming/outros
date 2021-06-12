@@ -1,0 +1,131 @@
+! Youtube
+! Remove vídeos Relacionados.
+www.youtube.com###related
+! Remove contador de Likes e Deslikes.
+www.youtube.com##ytd-toggle-button-renderer #text
+www.youtube.com###sentiment
+! Remove link do Logo
+www.youtube.com#?##logo:style(pointer-events: none !important; cursor: default !important)
+! Remove Historico de Pesquisa.
+www.youtube.com##.sbdd_b
+! Desabilita botão Explorar.
+www.youtube.com#?#ytd-guide-entry-renderer:-abp-has(a[href*="feed/explore"])
+www.youtube.com#?#ytd-mini-guide-entry-renderer:-abp-has(a[href*="feed/explore"])
+! Remove todas as coisas flutuantes sobre o video.
+www.youtube.com##.ytp-ce-element-show
+! Remove logo do canal
+www.youtube.com##.iv-click-target.branding-img
+! Remove icone informação do video.
+www.youtube.com##.ytp-cards-button-icon-default
+! Remove endscreen.
+www.youtube.com##.html5-endscreen
+www.youtube.com##.html5-endscreen-content
+www.youtube.com##.ytp-endscreen-content
+/endscreen.js$domain=youtube.com|www.youtube.com
+/endscreen.js$script,domain=youtube.com|youtu.be|youtube-nocookie.com|www.youtube.com
+www.youtube.com##.ytp-autonav-toggle-button-container
+! Remove Comentários
+!www.youtube.com###comments
+www.youtube.com###watch-discussion
+! Remove Descriçao de Video com Jogo
+www.youtube.com##ytd-rich-metadata-renderer.ytd-rich-metadata-row-renderer
+! Remove botão Inicio
+www.youtube.com#?#ytd-guide-entry-renderer:-abp-has(a[href="/"])
+www.youtube.com#?#ytd-mini-guide-entry-renderer:-abp-has(a[href="/"])
+! Contagem de Visualizações
+www.youtube.com##.view-count
+www.youtube.com###dot
+www.youtube.com##span.ytd-grid-video-renderer.style-scope:nth-of-type(1)
+www.youtube.com##span.ytd-video-meta-block.style-scope:nth-of-type(1)
+! Chat Ao Vivo
+www.youtube.com###chat
+www.youtube.com##ytd-live-chat-frame
+! Contador de Inscritos
+www.youtube.com###owner-sub-count
+www.youtube.com###subscribers
+! Botão Seja Membro
+www.youtube.com###sponsor-button
+! Informação de Video com Propaganda Paga
+www.youtube.com##.ytp-paid-content-overlay-link
+! Hash Tags
+www.youtube.com##.style-scope.super-title
+! Cartoes de Texto
+www.youtube.com##.ytp-cards-teaser-text
+! Informações Politicamente corretas dos videos.
+www.youtube.com##.attached-message
+www.youtube.com###clarify-box
+! Botoes Categorias Tags
+www.youtube.com##ytd-feed-filter-chip-bar-renderer
+! Propaganda
+www.youtube.com##.ytp-caption-window-container
+! Botão de Pesquisa por Voz
+www.youtube.com###voice-search-button
+! As Pessoas também Pesquisaram
+www.youtube.com##ytd-horizontal-card-list-renderer
+! Botões de Aplicativos do Youtube
+www.youtube.com##.style-default.ytd-topbar-menu-button-renderer
+! Teclado Virtual
+www.youtube.com##.sbib_c.gsst_b
+! Mais do Youtube
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(3)
+! Compartilhar
+www.youtube.com##ytd-button-renderer.size-default.style-default.force-icon-button.ytd-menu-renderer.style-scope:nth-of-type(1)
+! Botao Mini Player
+www.youtube.com##.ytp-button.ytp-miniplayer-button
+! Botao Modo Cinema
+www.youtube.com##.ytp-button.ytp-size-button
+! Botao Proximo
+www.youtube.com##.ytp-button.ytp-next-button
+! Localização
+www.youtube.com##.ytd-video-primary-info-renderer.style-scope.yt-simple-endpoint
+! Badges: Novo
+www.youtube.com###badges
+! Ponto de coisas novas no canal
+www.youtube.com###newness-dot
+! Botao Lembrete Aovivo
+www.youtube.com###buttons.ytd-grid-video-renderer.style-scope
+! Previne AutoPlay
+/watch_autoplayrenderer.js$script,domain=youtube.com|www.youtube.com
+! JS
+/annotations_module.js$script,domain=youtube.com|youtu.be|youtube-nocookie.com|www.youtube.com
+! Sujestoes noPause
+www.youtube.com##.ytp-scroll-min
+www.youtube.com##.ytp-pause-overlay
+! Remove Video de Boas Vindas no Canal.
+www.youtube.com##ytd-channel-video-player-renderer:upward(2)
+www.youtube.com##ytd-player[context$="TRAILER"] > .ytd-player > .html5-video-player > .html5-video-container > video:remove()
+! Scripts
+/web-animations-next-lite.min.js$script,domain=youtube.com|www.youtube.com
+/custom-elements-es5-adapter.js$script,domain=youtube.com|www.youtube.com
+/emojis-svg-7.json$script,domain=www.gstatic.com|gstatic.com
+/integrator.js$script,domain=youtube.com|www.youtube.com|payments.youtube.com
+/www-searchbox.js$script,domain=youtube.com|www.youtube.com
+/scheduler.js$script,domain=youtube.com|www.youtube.com
+/www-i18n-constants.js$script,domain=youtube.com|www.youtube.com
+/www-tampering.js$script,domain=youtube.com|www.youtube.com
+/spf.js$script,domain=youtube.com|www.youtube.com
+/network.js$script,domain=youtube.com|www.youtube.com
+/async_attach_app_loader.js$script,domain=youtube.com|www.youtube.com
+/inject.js$script,domain=youtube.com|www.youtube.com
+/ad_status.js$script,domain=youtube.com|www.youtube.com
+/captions.js$script,domain=youtube.com|www.youtube.com
+/miniplayer.js$script,domain=youtube.com|www.youtube.com
+/remote.js$script,domain=youtube.com|www.youtube.com
+$script,domain=youtube.com|www.youtube.com
+$all,domain=www.gstatic.com|gstatic.com
+$all,domain=i.ytimg.com|ytimg.com
+*.youtube.com$script
+*.ytimg.com$all
+@@i.ytimg.com$image
+@@/webcomponents-sd.js$script,domain=youtube.com|www.youtube.com
+@@/base.js$script,domain=youtube.com|www.youtube.com
+@@/desktop_polymer.js$script,domain=youtube.com|www.youtube.com
+
+! Mail
+www.mail.com##.content-wrapper
+www.mail.com##.dialogWrapper
+www.mail.com##.dialogOverlay
+
+! Facebook
+www.facebook.com##.pnx7fd3z.tn0ko95a.pedkr2u6
+
